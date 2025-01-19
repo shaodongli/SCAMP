@@ -96,6 +96,19 @@ profile, index = mp.selfjoin(a, sublen)
 profile, index = mp.abjoin(a, b, sublen, pearson=True, threads=4)
 ~~~
 
+### Installing from source 2
+~~~
+git clone https://github.com/zpzim/SCAMP
+cd SCAMP
+git submodule update --init --recursive
+mkdir build && cd build
+
+cmake ..
+cmake --build . --config Release
+pip install .
+~~~
+
+
 More information and the API documentation for pyscamp is available on [readthedocs](https://scamp-docs.readthedocs.io/en/latest/)
 
 ## Run Using Docker
